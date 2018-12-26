@@ -60,7 +60,11 @@ namespace BatchPass.Client
             "@",
             "#",
             "$",
-            "*"
+            "%",
+            "&",
+            "*",
+            "+",
+            "?"
         };
     }
 
@@ -73,6 +77,7 @@ namespace BatchPass.Client
             "attractive",
             "bald",
             "beautiful",
+            "blurry",
             "bright",
             "chubby",
             "clean",
@@ -91,6 +96,7 @@ namespace BatchPass.Client
             "invisible",
             "jagged",
             "long",
+            "lumpy",
             "magnificent",
             "messy",
             "misty",
@@ -212,7 +218,7 @@ namespace BatchPass.Client
             "generous",
             "happy",
             "honorable",
-            "honset",
+            "honest",
             "insightful",
             "jolly",
             "kind",
@@ -248,6 +254,7 @@ namespace BatchPass.Client
             "angry",
             "audaciouis",
             "bewildered",
+            "brash",
             "clueless",
             "clumsy",
             "defeated",
@@ -733,16 +740,29 @@ namespace BatchPass.Client
             "Toaster",
             #endregion
 
+            #region Astronomy
+            "asteroid",
+            "comet",
+            "galaxy",
+            "meteor",
+            "moon",
+            "planet",
+            "star",
+            "sun",
+            "supernova",
+            #endregion
+
             #region Clothing
             "Boots",
             "Jacket",
+            "glove",
             "Hat",
+            "Mitten",
             "Raincoat",
             "Scarf",
             "Shoelace",
-            "Socks",
+            "Sock",
             "Sweatshirt",
-
             #endregion
 
             #region Food
@@ -960,8 +980,39 @@ namespace BatchPass.Client
             "yogurt",
             #endregion
 
+            #region Geography (land)
+
+            "earth",
+            "dirt",
+            "dust",
+            "field",
+            "glacier",
+            "land",
+            "mineral",
+            "mountain",
+            "tundra",
+
+            #endregion
+
+            #region Geography (sea)
+
+            "brook",
+            "lake",
+            "ocean",
+            "river",
+            "riverbed",
+            "sea",
+            "stream",
+            "tide",
+            "tidepool",
+            "wave",
+            "whirlpool",
+
+            #endregion
+
             #region House Items
             "barstool",
+            "chimney",
             "dishwasher",
             "plate",
             "table",
@@ -972,6 +1023,7 @@ namespace BatchPass.Client
             #region Instruments
             "accordion",
             "bagpipes",
+            "bell",
             "cello",
             "clarinet",
             "flute",
@@ -982,6 +1034,15 @@ namespace BatchPass.Client
             "tuba",
             "violin",
             "whistle",
+            #endregion
+
+            #region Materials
+            "brick",
+            "cardboard",
+            "concrete",
+            "fabric",
+            "leather",
+            "plastic",
             #endregion
 
             #region Minerals
@@ -996,13 +1057,14 @@ namespace BatchPass.Client
 
             #region Occupations
             "Doctor",
+            "Engineer",
             "Firefighter",
             "Fisherman",
             "Hunter",
             "Nurse",
             "Pilot",
             "Policeman",
-
+            "Technician",
             #endregion
             
             #region Plants
@@ -1025,6 +1087,8 @@ namespace BatchPass.Client
             "circle",
             "cube",
             "cylinder",
+            "dot",
+            "line",
             "pentagon",
             "pyramid",
             "rectangle",
@@ -1033,6 +1097,7 @@ namespace BatchPass.Client
             #endregion
 
             #region Sports
+            "ball",
             "baseball",
             "basketball",
             "volleyball",
@@ -1048,21 +1113,34 @@ namespace BatchPass.Client
             #endregion
 
             #region Technology
+            "Battery",
             "Computer",
-            "Keyboard",            
+            "Keyboard",
+            "Microchip",
+            "Microscope",
+            "Monitor",
+            "Robot",
+            "Screen",
+            "Telescope",
             #endregion
 
             #region Tools
+            "blade",
+            "button",
             "chainsaw",
             "fork",
             "hammer",
             "ladder",
+            "lever",
             "key",
             "pencil",
+            "pin",
             "rake",
+            "ravor",
             "screwdriver",
             "shovel",
             "spoon",
+            "vacuum",
             "wrench",
             #endregion
 
@@ -1095,7 +1173,9 @@ namespace BatchPass.Client
             "raft",
             "railraod",
             "rocket",
+            "rollerblade",
             "sailboat",
+            "snowboard",
             "snowmobile",
             "spaceship",
             "submarine",
@@ -1105,10 +1185,26 @@ namespace BatchPass.Client
             "truck",
             "tugboat",
             "unicycle",
-            "wagon"
-#endregion
+            "wagon",
+            #endregion
 
-
+            #region Weather
+            "blizzard",
+            "breaze",
+            "cloud",
+            "earthquake",
+            "hurricane",
+            "lightning",
+            "rain",
+            "raindrop",
+            "snow",
+            "snowflake",
+            "storm",
+            "sunshine",
+            "thunder",
+            "typhoon",
+            "wind"
+            #endregion
         };
     }
 }
