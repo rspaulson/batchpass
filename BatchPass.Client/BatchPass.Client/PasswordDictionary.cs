@@ -27,9 +27,13 @@ namespace BatchPass.Client
 
                 int rAdj = r.Next(0, adjList.Count);
                 int rNoun = r.Next(0, nounList.Count);
+                int rAdj2 = r.Next(0, adjList.Count);
+                int rNoun2 = r.Next(0, nounList.Count);
+                int rNoun3 = r.Next(0, nounList.Count);
                 int rNum = r.Next(10, 100);
                 int rSymb = r.Next(0, symbList.Count);
-                passList.Add(UppercaseFirst(adjList[rAdj]) + UppercaseFirst(nounList[rNoun]) + rNum + symbList[rSymb]);
+                //passList.Add(UppercaseFirst(adjList[rAdj]) + UppercaseFirst(nounList[rNoun]) + rNum + symbList[rSymb]);
+                passList.Add(UppercaseFirst(adjList[rAdj]) + UppercaseFirst(nounList[rNoun]) + UppercaseFirst(nounList[rNoun2]) + UppercaseFirst(nounList[rNoun3]));
             }
 
             return passList;
@@ -252,7 +256,7 @@ namespace BatchPass.Client
             #region Negative Personality
             "aggressive",
             "angry",
-            "audaciouis",
+            "audacious",
             "bewildered",
             "brash",
             "clueless",
@@ -735,6 +739,7 @@ namespace BatchPass.Client
             #region Appliances
             "Blender",
             "Faucet",
+            "Oven",
             "Refrigerator",
             "Stove",
             "Toaster",
@@ -750,6 +755,24 @@ namespace BatchPass.Client
             "star",
             "sun",
             "supernova",
+            #endregion
+
+            #region Body
+            "ankle",
+            "arm",
+            "beard",
+            "chin",
+            "ear",
+            "eye",
+            "hand",
+            "head",
+            "leg",
+            "knee",
+            "nose",
+            "feet",
+            "foot",
+
+
             #endregion
 
             #region Clothing
@@ -988,9 +1011,13 @@ namespace BatchPass.Client
             "field",
             "glacier",
             "land",
+            "lava",
+            "magma",
             "mineral",
             "mountain",
+            "pebble",
             "tundra",
+            "volcano",
 
             #endregion
 
@@ -1038,11 +1065,16 @@ namespace BatchPass.Client
 
             #region Materials
             "brick",
+            "carbon",
             "cardboard",
             "concrete",
             "fabric",
+            "glass",
+            "granite",
             "leather",
+            "metal",
             "plastic",
+            "wax",
             #endregion
 
             #region Minerals
@@ -1076,6 +1108,7 @@ namespace BatchPass.Client
             "fern",
             "flower",
             "garden",
+            "grass",
             "jungle",
             "thorn",
             "tumbleweed",
@@ -1094,6 +1127,13 @@ namespace BatchPass.Client
             "rectangle",
             "square",
             "triangle",
+            #endregion
+
+            #region Sound
+            "music",
+            "sound",
+            "song",
+            "splash",
             #endregion
 
             #region Sports
@@ -1124,10 +1164,25 @@ namespace BatchPass.Client
             "Telescope",
             #endregion
 
+            #region Time
+            "age",
+            "autumn",
+            "fall",
+            "hour",
+            "minute",
+            "second",
+            "sprint",
+            "summer",
+            "time",
+            "winter",
+            "year",
+            #endregion
+
             #region Tools
             "blade",
             "button",
             "chainsaw",
+            "chalk",
             "fork",
             "hammer",
             "ladder",
@@ -1136,7 +1191,7 @@ namespace BatchPass.Client
             "pencil",
             "pin",
             "rake",
-            "ravor",
+            "razor",
             "screwdriver",
             "shovel",
             "spoon",
@@ -1193,6 +1248,7 @@ namespace BatchPass.Client
             "breaze",
             "cloud",
             "earthquake",
+            "fog",
             "hurricane",
             "lightning",
             "rain",
@@ -1203,8 +1259,16 @@ namespace BatchPass.Client
             "sunshine",
             "thunder",
             "typhoon",
-            "wind"
+            "wind",
             #endregion
+
+
+            #region Uncategorized
+            "fire",
+            "flame"
+
+            #endregion
+
         };
     }
 }
